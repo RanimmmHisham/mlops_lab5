@@ -19,3 +19,21 @@ Before running the application, ensure you have the following installed:
 Open your terminal and pull the required model:
 ```bash
 ollama pull qwen3:0.6b
+```
+### 2. Install Dependencies
+```bash
+python -m venv venv
+```
+```bash
+# Activate on Windows
+.\venv\Scripts\activate
+```
+```bash
+# Install requirements
+pip install gradio requests
+```
+### 3. Run the Application
+Launch the Gradio interface:
+```bash
+python app.py
+```
