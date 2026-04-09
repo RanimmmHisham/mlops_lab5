@@ -27,7 +27,8 @@ def chat_with_model(prompt):
             "model": MODEL_NAME,
             "prompt": full_prompt,
             "stream": False
-        }
+        },
+        timeout=60
     )
 
     result = response.json()
@@ -38,7 +39,7 @@ iface = gr.Interface(
     fn=chat_with_model,
     inputs=gr.Textbox(
         lines=5,
-        placeholder="Ask me something like: Explain Docker in simple terms..."
+        placeholder="Ask me something like: Explain the logical steps to deploy a.."
     ),
     outputs=gr.Textbox(label="Response"),
     title="Local AI Thinking Assistant",
