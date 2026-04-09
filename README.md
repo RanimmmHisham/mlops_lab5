@@ -4,7 +4,6 @@ This project provides a web-based Graphical User Interface (GUI) to interact wit
 
 ## 🛠️ Features
 * **Local Inference:** All data stays on your machine via Ollama.
-* **Reasoning-Optimized:** Uses advanced prompting to trigger Chain-of-Thought (CoT) responses.
 * **Web Interface:** Easy-to-use Gradio UI for chatting and experimentation.
 * **MLOps Ready:** Structured to be easily containerized or integrated into automated workflows.
 
